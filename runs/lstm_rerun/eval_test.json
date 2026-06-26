@@ -1,0 +1,9 @@
+{
+  "model_type": "lstm",
+  "checkpoint": "project3/runs/balanced/best.pt",
+  "logloss": {
+    "nll": 2.344080941896912,
+    "perplexity": 10.423688348682099
+  },
+  "distribution_metrics": {}
+}

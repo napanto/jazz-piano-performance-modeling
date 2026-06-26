@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Data & checkpoints (regenerable from configs)
+runs/**/last.pt
+runs/**/best.pt
+runs/**/*.pt
+runs/**/checkpoint_*.pt
+outputs/
+
+# Symlinked dataset dir (don't commit the link target either)
+data/raw/**
+data/processed/**
+data/splits/**.json
+
+# Logs and large eval artifacts
+*.log
+runs/**/train_log.jsonl
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local working files and scratch artifacts (kept on disk, not part of the archive)
+.git_sha
+papers/
+reports/FINAL_NUMBERS.md
+reports/aria_sweep_midis/
+reports/vae_campaign/
+runs/cadenza_performer_recreated/
